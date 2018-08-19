@@ -20,6 +20,14 @@ public class Main {
                 invalidEntry = true;
                 System.out.println("Invalid entry. Must be an integer");
             }
+
+            System.out.println("Would you like to create another password? (Y/N) ");
+            String answer = scan.nextLine();
+            if(answer.equalsIgnoreCase("Y") || answer.equalsIgnoreCase("Yes")){
+                continue;
+            } else {
+                break;
+            }
         } while (!invalidEntry);
 
     }
